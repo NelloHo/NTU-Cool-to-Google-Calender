@@ -82,8 +82,8 @@ def create_events(service, previous_events):
 				"reminders": {
 					"useDefault": False,
 					"overrides": [
-						{"method": "email", "minutes": 24 * 60},
-						{"method": "popup", "minutes": 5 * 60},
+						{"method": "email", "minutes": EMAIL_NOTIFICATION * 60},
+						{"method": "popup", "minutes": POPUP_NOTIFICATION * 60},
 					],
 				},
 			}
