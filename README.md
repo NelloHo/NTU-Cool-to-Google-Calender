@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 
 ### 5. 
-或在終端機中輸入
+在終端機中輸入
 ```bash
 python main.py
 ```
