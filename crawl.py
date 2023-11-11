@@ -53,7 +53,6 @@ def get_date(soup):
     start_date = datetime.datetime(*(int(i) for i in iso_date.split('-')))
     return start_date
 
-
 def main() -> "OrderedDict[str, list[tuple[str, str]]]":
     options = Options()
     options.add_argument("--disable-notifications")

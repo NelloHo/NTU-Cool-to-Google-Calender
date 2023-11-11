@@ -108,7 +108,12 @@ def create_events(service, previous_events):
 
 
 if __name__ == "__main__":
-    crawled_data = crawl.main()
-    previous_events = get_events(service, list(crawled_data.items())[0][0])
-    create_events(service, previous_events)
+    try:
+        crawled_data = crawl.main()
+        previous_events = get_events(service, list(crawled_data.items())[0][0])
+        create_events(service, previous_events)
+        input('--- Task Completes, Press Enter to Close ---')
+    except:    
+        input('! Task Terminated \nPlease Makesure You Setup Correct Usernames and Password in defs.py \nPress Enter to Close')
+    quit()
 
