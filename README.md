@@ -23,7 +23,9 @@ pip install -r requirements.txt
 
 
 ### 5. 
-在終端機中輸入
+執行`main.exe`
+
+或在終端機中輸入
 ```bash
 python main.py
 ```
